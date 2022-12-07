@@ -9,7 +9,7 @@ function Stats(){
 
     return (
         <>
-        <Box id="Stats" h="100vh" bg="#0f1624" p="2%">
+        <Box id="Stats" h="100vh" p="2%">
           
 <Box  m="auto" mb="40px"  w="fit-content" color="#dc143c"  mt={{sm:"50px", md: "30px", xl:"10px"  }}><Text fontSize='3xl' as="b">Github Stats & Calander</Text> </Box>
 

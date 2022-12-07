@@ -4,10 +4,10 @@ import { ArrowForwardIcon } from "@chakra-ui/icons"
 function About() {
   return (
     <>
-      <Box h="100vh" bg="#1a202c" p="7%" pl="10%" pr="10%" id="About">
+      <Box h="100vh" p="7%" pl="10%" pr="10%" id="About" minH="fit-content">
         {/* <Button m="auto"> here </Button> */}
 
-        <Box m="auto" mb="50px" borderBottom={"4px"} w="fit-content" color="#dc143c" borderColor="#dc143c"><Text fontSize='3xl' as="b">About me</Text> </Box>
+        <Box m="auto" mb="50px" w="fit-content" color="#dc143c"><Text fontSize='3xl' as="b">About me</Text> </Box>
 
         <Flex  fontSize='xl' gap="10px">
   <ArrowForwardIcon color='#dc143c' mt="5px" />

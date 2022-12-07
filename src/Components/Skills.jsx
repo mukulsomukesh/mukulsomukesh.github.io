@@ -25,7 +25,7 @@ export default function Skills() {
     <>
 
       <Box id="Skill's" w="100%" pr="10%" pl="10%" p="7%"  minH="fit-content">
-      <Box  m="auto" mb="50px" borderBottom={"4px"} w="fit-content" color="#dc143c" borderColor="#dc143c" ><Text fontSize='3xl' as="b">Skills</Text> </Box>
+      <Box  m="auto" mb="50px" w="fit-content" color="#dc143c" ><Text fontSize='3xl' as="b">Skills</Text> </Box>
 
       <SimpleGrid  minChildWidth='120px'  spacing='15px' >
 
@@ -74,7 +74,7 @@ export default function Skills() {
         <Text fontSize='lg' align={"center"} mt="15px">Tailwind</Text>
       </Box>
 
-      <Box bg="#1a202c" borderRadius="10px" h="150px"   p="15px">
+      <Box bg="#1a202c" borderRadius="10px" h="150px"   p="15px" >
         <Image src={bootstrap} h="80px" m="auto" mt="10px" w="90px"></Image>
         <Text fontSize='lg' align={"center"} mt="10px">Bootstrap</Text>
       </Box>

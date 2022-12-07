@@ -4,12 +4,12 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 function Home() {
     return (
         <>
-            < SimpleGrid id="home" w="100%" minH={"100vh"} h="fit-content" columns={[1, 1, 2]} pr="10%" pl="10%">
+            < SimpleGrid id="Home" w="100%" minH={"100vh"} h="fit-content" columns={[1, 1, 2]} pr="10%" pl="10%">
                 <Box pt="130px" minH={"80vh"}>
                     <Box h="fit-content"> <Heading as='h2' fontSize={{ sm: "40px", md: '50px', lg: '65px' }} > Hi, </Heading></Box>
                     <Flex h="fit-content" >  <Heading as='h2' fontSize={{ sm: "40px", md: '50px', lg: '65px' }} >  I am  Mukul Jatav </Heading> </Flex>
                     <Box h="fit-content" mt="8px">  <Heading as='h2' fontSize={{ sm: "25px", md: '35px', lg: '40px' }} >  Full Stack Web Developer </Heading> </Box>
-                      <Button bg='#dc143c' color="white" w="130px" h="45px" mt="40px" >  <Link align="center" p="12px" w="full" h="full" href='https://drive.google.com/file/d/1Z-3FKH_AuRn-iV936-kWonl5io1OgoBE/view' isExternal> Resume </Link> </Button> 
+                      <Button _hover={{border:"2px"}} bg='#dc143c' color="white" w="130px" h="45px" mt="40px" >  <Link align="center" p="12px" w="full" h="full" href='https://drive.google.com/file/d/1Z-3FKH_AuRn-iV936-kWonl5io1OgoBE/view' isExternal> Resume </Link> </Button> 
                     
                     <HStack
                     mt="40px"

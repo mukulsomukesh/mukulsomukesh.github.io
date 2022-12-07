@@ -13,11 +13,12 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "framer-motion": "^6.5.1",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.3.4",
     "react-icons": "^4.6.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.8",
     "web-vitals": "^2.1.4"
   },
