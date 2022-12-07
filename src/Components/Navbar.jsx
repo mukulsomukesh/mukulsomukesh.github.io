@@ -43,7 +43,7 @@ export default function Simple() {
 
 
 
-              <a href={require("../Assets/Mukul-Jatav-Resume.pdf")} download="Mukul-Jatav-Resume">
+              {/* <a href={require("../Assets/Mukul-Jatav-Resume.pdf")} download="Mukul-Jatav-Resume">
               {/* <Box p="10px"  _hover={{ cursor: "pointer", borderBottom:"4px solid #dc143c", color:"#dc143c", transform: "scale(1.1,1.1)"}}>Resume</Box> */}
 
               <Button size="md"  height="48px"  width="fit-content" variant="ghost" color="#dc143c"
@@ -52,7 +52,7 @@ export default function Simple() {
                         Resume
                       </Button>
 
-              </a>
+              </a> */}
 
             </HStack>
           </HStack>
