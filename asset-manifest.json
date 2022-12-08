@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.fa4071bd.css",
-    "main.js": "/static/js/main.41c307d1.js",
+    "main.js": "/static/js/main.2de44aa6.js",
     "static/js/787.0e008112.chunk.js": "/static/js/787.0e008112.chunk.js",
+    "static/media/findImages.PNG": "/static/media/findImages.b9b375a74fd8d3ddbf19.PNG",
     "static/media/giva.PNG": "/static/media/giva.d49864e2785ae12d43f7.PNG",
     "static/media/shop.PNG": "/static/media/shop.5ea7364771e6669231ec.PNG",
     "static/media/cri.PNG": "/static/media/cri.d8c243b615e1eaa365fb.PNG",
     "static/media/lyst.PNG": "/static/media/lyst.74d20c10ae79bc248ed6.PNG",
+    "static/media/Mukul-Jatav-Resume.pdf": "/static/media/Mukul-Jatav-Resume.4460d7604926b5d048ac.pdf",
     "static/media/portfolio.PNG": "/static/media/portfolio.7d73b7c787affb5fbe16.PNG",
     "static/media/bootstrap.png": "/static/media/bootstrap.cd272f8029388703a2b6.png",
     "static/media/react.png": "/static/media/react.396536ced87da4ba25b4.png",
     "static/media/canva.png": "/static/media/canva.9a9205e5fd26a1c72a1a.png",
     "index.html": "/index.html",
     "main.fa4071bd.css.map": "/static/css/main.fa4071bd.css.map",
-    "main.41c307d1.js.map": "/static/js/main.41c307d1.js.map",
+    "main.2de44aa6.js.map": "/static/js/main.2de44aa6.js.map",
     "787.0e008112.chunk.js.map": "/static/js/787.0e008112.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa4071bd.css",
-    "static/js/main.41c307d1.js"
+    "static/js/main.2de44aa6.js"
   ]
 }
