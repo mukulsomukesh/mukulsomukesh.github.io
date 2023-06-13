@@ -10,6 +10,8 @@ import Contact from "./Components/Contact"
 function App() {
   return (
 <>
+
+ {/*  container  */}
 <Box fontFamily={"sans-serif"} width={"100%"} bg="#0b111b" color="white" h="fit-content">
 <Navbar />
 <Home />
