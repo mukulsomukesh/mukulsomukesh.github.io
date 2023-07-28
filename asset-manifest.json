@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.fa4071bd.css",
-    "main.js": "/static/js/main.79e1e7b8.js",
+    "main.css": "/static/css/main.42eb8f90.css",
+    "main.js": "/static/js/main.119781c3.js",
     "static/js/787.0e008112.chunk.js": "/static/js/787.0e008112.chunk.js",
     "static/media/nnnow.png": "/static/media/nnnow.9f428d4e83c980d33169.png",
-    "static/media/mg.png": "/static/media/mg.844253513a088c636cac.png",
-    "static/media/Mukul-Jatav-Resume.pdf": "/static/media/Mukul-Jatav-Resume.cd96318dc9a1d76482cf.pdf",
+    "static/media/Mukul-Jatav-Resume.pdf": "/static/media/Mukul-Jatav-Resume.8d4e33d89e0ed55bd07c.pdf",
     "static/media/profile.png": "/static/media/profile.6d4afcec00bcf737fb83.png",
-    "static/media/fileSharingApp.png": "/static/media/fileSharingApp.30c7d1c7fb5161b87763.png",
-    "static/media/portfolio.PNG": "/static/media/portfolio.22ccc7a315e9be4abc26.PNG",
+    "static/media/fileSharing.png": "/static/media/fileSharing.6825e09b9e10f6ac9d6c.png",
+    "static/media/chatApp.png": "/static/media/chatApp.580bf443cedff09537a5.png",
     "static/media/bootstrap.png": "/static/media/bootstrap.cd272f8029388703a2b6.png",
     "static/media/react.png": "/static/media/react.396536ced87da4ba25b4.png",
-    "static/media/canva.png": "/static/media/canva.9a9205e5fd26a1c72a1a.png",
     "index.html": "/index.html",
-    "main.fa4071bd.css.map": "/static/css/main.fa4071bd.css.map",
-    "main.79e1e7b8.js.map": "/static/js/main.79e1e7b8.js.map",
+    "main.42eb8f90.css.map": "/static/css/main.42eb8f90.css.map",
+    "main.119781c3.js.map": "/static/js/main.119781c3.js.map",
     "787.0e008112.chunk.js.map": "/static/js/787.0e008112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa4071bd.css",
-    "static/js/main.79e1e7b8.js"
+    "static/css/main.42eb8f90.css",
+    "static/js/main.119781c3.js"
   ]
 }
