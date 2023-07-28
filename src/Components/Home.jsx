@@ -1,55 +1,102 @@
-import { Flex,Link, HStack,IconButton, Box, SimpleGrid, Heading, Button, Image } from '@chakra-ui/react'
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import {
+  Flex,
+  Link,
+  HStack,
+  IconButton,
+  Box,
+  Heading,
+  Button,
+  Tooltip,
+} from "@chakra-ui/react";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 function Home() {
-    return (
-        <>
-            < SimpleGrid id="Home" w="100%" minH={"100vh"} h="fit-content" columns={[1, 1, 2]} pr="10%" pl="10%">
-                <Box pt="130px" minH={"80vh"}>
-                    <Box h="fit-content"> <Heading as='h2' fontSize={{ sm: "40px", md: '50px', lg: '65px' }} > Hi, </Heading></Box>
-                    <Flex h="fit-content" >  <Heading as='h2' fontSize={{ sm: "40px", md: '50px', lg: '65px' }} >  I am  Mukul Jatav </Heading> </Flex>
-                    <Box h="fit-content" mt="8px">  <Heading as='h2' fontSize={{ sm: "25px", md: '35px', lg: '40px' }} >  Full Stack Web Developer </Heading> </Box>
-                      <Button _hover={{border:"2px"}} bg='#dc143c' color="white" w="130px" h="45px" mt="40px" >  <Link align="center" p="12px" w="full" h="full" href='https://drive.google.com/file/d/1Z-3FKH_AuRn-iV936-kWonl5io1OgoBE/view' isExternal> Resume </Link> </Button> 
-                    
-                    <HStack
-                    mt="40px"
-                      spacing={5}
-                      alignItems="flex-start">
-                    <Link href='https://www.linkedin.com/in/mukul-jatav/' isExternal>                        
-                      <IconButton
-                        aria-label="facebook"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#dc143c' }}
-                        icon={<BsLinkedin size="28px" />}
-                      />
-                      </Link>
+  return (
+      <Box
+        pt={{ base: "45%", md: "40%", lg: "15%" }}
+        id="Home"
+        w="fit-content"
+        m="auto"
+        minH={"100vh"}
+        h="fit-content"
+        pr="10%"
+        pl="10%"
+        textAlign={"center"}
+      >
+        {/* welcome text  */}
+        <Flex gap="20px" w="fit-content" m="auto" mb="15px">
+          <Heading as="h2" fontSize={{ base: "25px", md: "50px", lg: "65px" }}>
+            Hi, I am
+          </Heading>
+          <Heading
+            as="h2"
+            fontSize={{ base: "25px", md: "50px", lg: "65px" }}
+            color="#dc143c">
+            Mukul Jatav
+          </Heading>
+        </Flex>
 
-                       <Link href='https://github.com/mukulsomukesh' isExternal>
-                      <IconButton
-                        aria-label="github"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#dc143c' }}
-                        icon={<BsGithub size="28px" />}
-                      />
-                      </Link>
-                    </HStack>
+        {/* full stack heading */}
+        <Heading as="h2" fontSize={{ base: "20px", md: "40px", lg: "45px" }}>
+          {" "}
+          Full Stack Web Developer{" "}
+        </Heading>
 
-                    {/* <Flex gap="3" mt="50px" >
-                        <BsLinkedin size={"25px"} />
-                        <BsGithub mr="5" ml="5" size={"25px"} />
-                    </Flex> */}
-                </Box>
+        {/* resume button */}
+        <Link
+          href="https://drive.google.com/file/d/1Z-3FKH_AuRn-iV936-kWonl5io1OgoBE/view"
+          isExternal
+        >
+          <Button
+            _hover={{ border: "2px", background: "#0f1624", color: "#dc143c" }}
+            bg="#dc143c"
+            color="white"
+            w="130px"
+            h="45px"
+            mt="40px"
+          >
+            Resume
+          </Button>
+        </Link>
 
-                <Box mt="8%" >
-                    <Image src='https://shiny-torte-03f744.netlify.app/assets/img/perfil.png' h="100%" w="100%" alt='Dan Abramov' />
-                </Box>
-            </SimpleGrid>
-        </>
-    )
+        {/* linkdin & github icon button */}
+        <HStack
+          w="fit-content"
+          pt="30px"
+          m="auto"
+          spacing={5}
+          alignItems="flex-start"
+        >
+          {/* linkdin icon button */}
+          <Tooltip label="Let's Connect on Linkedin" hasArrow bg="#dc143c" color='white' fontSize='md'>
+          <Link href="https://www.linkedin.com/in/mukul-jatav/" isExternal>
+            <IconButton
+              aria-label="facebook"
+              variant="ghost"
+              size="lg"
+              isRound={true}
+              _hover={{ bg: "#dc143c" }}
+              icon={<BsLinkedin size="28px" />}
+            />
+          </Link>
+          </Tooltip>
+
+          {/* github icon button */}
+          <Tooltip label="My Github Profile" hasArrow bg="#dc143c" color='white' fontSize='md'>
+          <Link href="https://github.com/mukulsomukesh" isExternal>
+            <IconButton
+              aria-label="github"
+              variant="ghost"
+              size="lg"
+              isRound={true}
+              _hover={{ bg: "#dc143c" }}
+              icon={<BsGithub size="28px" />}
+            />
+          </Link>
+          </Tooltip>
+        </HStack>
+      </Box>
+  );
 }
 
-export default Home
+export default Home;
