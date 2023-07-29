@@ -54,7 +54,7 @@ function Project() {
 
   return (
     <Box
-      data-aos="fade-up"
+      data-aos="zoom-in"
       id="Projects"
       mb="50px"
       minH="100vh"
@@ -74,7 +74,8 @@ function Project() {
       <SimpleGrid minChildWidth="290px" spacing="30px">
         {projectData?.map((item) => (
           <Box
-            data-aos="fade-up"
+
+            data-aos="zoom-in"
             h="fit-content"
             key={item.id}
             bg="#0b111b"

@@ -6,69 +6,70 @@ import AOS from 'aos';
 function About() {
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({});
   }, [])
 
   return (
-      <Box minH="fit-content" p="3%" pl="13%" pr="13%" id="About" data-aos="fade-up" >
-        {/* about me text, box */}
-        <Box m="auto" mb="50px" w="fit-content" color="#dc143c">
-          <Text fontSize="3xl" as="b">
-            About me
-          </Text>
+    <Box minH="fit-content" p="3%" pl="13%" pr="13%" id="About" data-aos="zoom-in" >
+      {/* about me text, box */}
+      <Box m="auto" mb="50px" w="fit-content" color="#dc143c">
+        <Text fontSize="3xl" as="b">
+          About me
+        </Text>
+      </Box>
+
+      {/* this flex contain my image & about me text */}
+      <Flex
+        flexDirection={{ base: "column", sm: "column", md: "row", xl: "row" }}
+        gap="40px"
+        h="full"
+        w="fit-content"
+        m="auto"
+        alignItems={"center"}
+      >
+        {/* this box contain my profile image */}
+        <Box
+          data-aos="zoom-in"
+          h="400px"
+          w={{ base: "full", sm: "full", md: "37%", xl: "37%" }}
+          boxShadow="dark-lg"
+          bg="#0b111b"
+          borderRadius={"80px"}
+        >
+          {/* my profile image */}
+          <Image src={portfolio} h="100%" borderRadius={"80px"} />
         </Box>
 
-        {/* this flex contain my image & about me text */}
-        <Flex
-          flexDirection={{ base: "column", sm: "column", md: "row", xl: "row" }}
-          gap="40px"
-          h="full"
-          w="fit-content"
-          m="auto"
-          alignItems={"center"}
+        {/* this box contain text about me */}
+        <Box
+          w={{ base: "95%", sm: "95%", md: "55%", xl: "55%" }}
+          fontSize="md"
+          textAlign={"justify"}
+          minH="fit-content"
         >
-          {/* this box contain my profile image */}
-          <Box
-            h="400px"
-            w={{ base: "full", sm: "full", md: "37%", xl: "37%" }}
-            boxShadow="dark-lg"
-            bg="#0b111b"
-            borderRadius={"80px"}
-          >
-            {/* my profile image */}
-            <Image src={portfolio} h="100%" borderRadius={"80px"} />
-          </Box>
-
-          {/* this box contain text about me */}
-          <Box
-            w={{ base: "95%", sm: "95%", md: "55%", xl: "55%" }}
-            fontSize="md"
-            textAlign={"justify"}
-            minH="fit-content"
-          >
-            <Text mb="15px">
-              {" "}
-              Hello! My name is Mukul Jatav and I am an full stack web developer with experience in HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB.{" "}
-            </Text>
-            <Text mb="15px">
-              {" "}
-              I completed my BCA (Bachelor of Computer Applications) in 2021 from Saharanpur Institute of Advanced Studies..{" "}
-            </Text>
-            <Text mb="15px">
-              {" "}
-              I completed a 4-month internship at Salesken. I work with senior developers to build web applications using React JS, HTML 5, JavaScript, and Bootstrap.  This experience improved my software development
-              skills and taught me industry-standard development practices.{" "}
-            </Text>
-            <Text mb="15px">
-              {" "}
-              I have strong problem-solving skills, and a proactive work approach, and excel in team collaboration with
-              excellent communication. Committed to delivering quality work within deadlines, I am a quick learner, adaptable,
-              detail-oriented, and passionate about writing optimized code.{" "}
-            </Text>
-          </Box>
-        </Flex>
-        {/* close flex */}
-      </Box>
+          <Text mb="15px" data-aos="zoom-in">
+            {" "}
+            Hello! My name is Mukul Jatav and I am an full stack web developer with experience in HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB.{" "}
+          </Text>
+          <Text mb="15px" data-aos="zoom-in">
+            {" "}
+            I completed my BCA (Bachelor of Computer Applications) in 2021 from Saharanpur Institute of Advanced Studies..{" "}
+          </Text>
+          <Text mb="15px" data-aos="zoom-in">
+            {" "}
+            I completed a 4-month internship at Salesken. I work with senior developers to build web applications using React JS, HTML 5, JavaScript, and Bootstrap.  This experience improved my software development
+            skills and taught me industry-standard development practices.{" "}
+          </Text>
+          <Text mb="15px" data-aos="zoom-in">
+            {" "}
+            I have strong problem-solving skills, and a proactive work approach, and excel in team collaboration with
+            excellent communication. Committed to delivering quality work within deadlines, I am a quick learner, adaptable,
+            detail-oriented, and passionate about writing optimized code.{" "}
+          </Text>
+        </Box>
+      </Flex>
+      {/* close flex */}
+    </Box>
   );
 }
 
