@@ -15,6 +15,7 @@ import { BsGithub } from "react-icons/bs";
 import chatApp from "../Assets/chatApp.png";
 import fileSharingApp from "../Assets/fileSharing.png";
 import nnnow from "../Assets/nnnow.png";
+import todo from "../Assets/todo_home.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -41,6 +42,13 @@ const projectData = [
     desc: `This project is a clone of “nnnow.com” with backend integration, which is an e-commerce store & here we implemented some functionalities like sign up, sign in, logout, product search by name or category, filters, sorting, add to cart, add to wishlist, and Admin panel to add or remove products etc`,
     github: "https://github.com/mukulsomukesh/trendy-vibes",
     deploy: "https://trendy-vibes-imdebabrata-imdebabrata.vercel.app/",
+    TechStack: "React JS | Node JS | Express JS | MongoDB | Redux | Chakkra UI"
+  }, {
+    name: "TODO Application",
+    img: todo,
+    desc: `Welcome to our super simple TODO app! Here, you can easily sign up and log in. Once you're in, you can create tasks, update them if things change, and even delete tasks when you're done. I make sure everything is easy to use, Let's get organized and productive together!`,
+    github: "https://github.com/mukulsomukesh/TODO",
+    deploy: "https://lighthearted-fox-2d89be.netlify.app/signup",
     TechStack: "React JS | Node JS | Express JS | MongoDB | Redux | Chakkra UI"
   },
 ]
@@ -71,7 +79,7 @@ function Project() {
         </Text>
       </Box>
 
-      <SimpleGrid minChildWidth="290px" spacing="30px">
+      <SimpleGrid  spacing="30px" columns={{ sm: 1, md: 2, lg: 3 }}>
         {projectData?.map((item) => (
           <Box
 
