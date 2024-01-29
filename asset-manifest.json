@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6f7b4c5b.css",
-    "main.js": "/static/js/main.5de31355.js",
+    "main.js": "/static/js/main.f8b182d5.js",
     "static/js/787.0e008112.chunk.js": "/static/js/787.0e008112.chunk.js",
     "static/media/nnnow.png": "/static/media/nnnow.9f428d4e83c980d33169.png",
     "static/media/Mukul-Jatav-Resume.pdf": "/static/media/Mukul-Jatav-Resume.8d4e33d89e0ed55bd07c.pdf",
@@ -13,11 +13,11 @@
     "static/media/react.png": "/static/media/react.396536ced87da4ba25b4.png",
     "index.html": "/index.html",
     "main.6f7b4c5b.css.map": "/static/css/main.6f7b4c5b.css.map",
-    "main.5de31355.js.map": "/static/js/main.5de31355.js.map",
+    "main.f8b182d5.js.map": "/static/js/main.f8b182d5.js.map",
     "787.0e008112.chunk.js.map": "/static/js/787.0e008112.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f7b4c5b.css",
-    "static/js/main.5de31355.js"
+    "static/js/main.f8b182d5.js"
   ]
 }
