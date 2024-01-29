@@ -1,57 +1,55 @@
-import { Box } from '@chakra-ui/react'
-import Navbar from "./Components/Navbar"
-import Home from "./Components/Home"
+import React from 'react';
+import { Box } from '@chakra-ui/react';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
 import About from './Components/About';
 import Skills from './Components/Skills';
 import Github from './Components/Github';
 import Project from './Components/Project';
-import Contact from "./Components/Contact"
- 
+import Contact from './Components/Contact';
+import WorkExperiance from './Components/WorkExperiance';
+
 function App() {
-
   return (
-<>
-{/* box container */}
-<Box fontFamily={"sans-serif"} width={"100%"} bg="#0f1624" color="#ececed">
+    <>
+      {/* Sparkling background */}
+      <div className="sparkling-background">
+        {[...Array(50)].map((_, index) => (
+          <div className="sparkle" key={index}></div>
+        ))}
+      </div>
 
-{/* navbar */}
-<Navbar />
+      {/* Rest of your app */}
+      <Box fontFamily={'sans-serif'} width={'100%'} bg="#0f1624" color="#ececed">
+        {/* navbar */}
+        <Navbar />
 
-{/* home section */}
-<Home />
+        {/* home section */}
+        <Home />
 
-{/* about me section */}
-<About />
+        {/* about me section */}
+        <About />
 
-{/* skills section */}
-<Skills />
+        {/* exp */}
+        <WorkExperiance />
 
-{/* projects section */}
-<Project />
+        {/* skills section */}
+        <Skills />
 
-{/* gitbus section  */}
-<Github />
 
-{/* contact me section */}
-<Contact/>
+        {/* projects section */}
+        <Project />
 
-{/* close box */}
-</Box>
-</>
+        {/* gitbus section */}
+        <Github />
+
+        {/* contact me section */}
+        <Contact />
+
+        {/* close box */}
+      </Box>
+    </>
   );
 }
 
 export default App;
-
-//  h="100vh"
-// overflowY="auto"
-// __css={{
-// '&::-webkit-scrollbar': {
-//   width: '8px',
-//   background: "white",
-// },
-// '&::-webkit-scrollbar-thumb': {
-//   background: "#dc143c",
-//   borderRadius: '1rem',
-// },
-// }}

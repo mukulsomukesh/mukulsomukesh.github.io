@@ -40,7 +40,7 @@ function Home() {
 
       {/* full stack heading */}
       <Heading as="h2" fontSize={{ base: "20px", md: "40px", lg: "45px" }}>
-        Full Stack Web Developer
+        Full Stack Developer
 
       </Heading>
 

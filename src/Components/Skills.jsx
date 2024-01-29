@@ -48,7 +48,7 @@ export default function Skills() {
   }, [])
 
   return (
-    <Box id="Skill's" w="100%" pr="10%" pl="10%" p="7%" minH="fit-content" data-aos="zoom-in">
+    <Box id="Skill's" w="100%" pr="10%" pl="10%" p="7%" minH="fit-content" data-aos="fade-up">
       {/* component name */}
       <Box m="auto" mb="50px" w="fit-content" color="#dc143c">
         <Text fontSize="3xl" as="b">
@@ -60,7 +60,7 @@ export default function Skills() {
       <SimpleGrid minChildWidth="120px" spacing="15px">
         {skillsData.map((skill) => (
           <Box
-            data-aos="zoom-in"
+            data-aos="fade-up"
             key={skill.name}
             bg="#0b111b"
             borderRadius="10px"

@@ -35,21 +35,21 @@ const projectData = [
     desc: `This File Sharing App enable user to signup, login, upload a file from his device, setting a password to protect it, and share this file with others. with genarated link, anyone can access the file and download the file with shared link. Additionally, users can modify, delete, change or remove the password for his uploaded file. `,
     github: "https://github.com/mukulsomukesh/file-sharing-app",
     deploy: "https://file-sharing-application.netlify.app/",
-    TechStack: "React JS | Node JS | Express JS | MongoDB | Redux | Chakkra UI"
+    TechStack: "React JS | Node JS | Express JS | MongoDB | Redux | chakra UI"
   }, {
     name: "Nnnow Clone",
     img: nnnow,
     desc: `This project is a clone of “nnnow.com” with backend integration, which is an e-commerce store & here we implemented some functionalities like sign up, sign in, logout, product search by name or category, filters, sorting, add to cart, add to wishlist, and Admin panel to add or remove products etc`,
     github: "https://github.com/mukulsomukesh/trendy-vibes",
     deploy: "https://trendy-vibes-imdebabrata-imdebabrata.vercel.app/",
-    TechStack: "React JS | Node JS | Express JS | MongoDB | Redux | Chakkra UI"
+    TechStack: "React JS | Node JS | Express JS | MongoDB | Redux | chakra UI"
   }, {
     name: "TODO Application",
     img: todo,
     desc: `Welcome to our super simple TODO app! Here, you can easily sign up and log in. Once you're in, you can create tasks, update them if things change, and even delete tasks when you're done. I make sure everything is easy to use, Let's get organized and productive together!`,
     github: "https://github.com/mukulsomukesh/TODO",
     deploy: "https://lighthearted-fox-2d89be.netlify.app/signup",
-    TechStack: "React JS | Node JS | Express JS | MongoDB | Redux | Chakkra UI"
+    TechStack: "React JS | Node JS | Express JS | MongoDB | Redux | chakra UI"
   },
 ]
 
@@ -62,7 +62,7 @@ function Project() {
 
   return (
     <Box
-      data-aos="zoom-in"
+      data-aos="fade-up"
       id="Projects"
       mb="50px"
       minH="100vh"
@@ -83,7 +83,7 @@ function Project() {
         {projectData?.map((item) => (
           <Box
 
-            data-aos="zoom-in"
+            data-aos="fade-up"
             h="fit-content"
             key={item.id}
             bg="#0b111b"

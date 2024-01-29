@@ -4,7 +4,7 @@ import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { MdDownloadForOffline } from 'react-icons/md';
 
-const Links = ["Home", "About", "Skill's", "Projects", "Contact"];
+const Links = ["Home", "About","Work Experiance", "Skill's", "Projects", "Contact"];
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();

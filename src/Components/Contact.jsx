@@ -92,7 +92,7 @@ export default function Contact() {
 
   return (
     // container
-    <Container minH="100vh" h="fit-content" id="Contact" maxW="100vw" centerContent overflow="hidden" data-aos="zoom-in">
+    <Container minH="100vh" h="fit-content" id="Contact" maxW="100vw" centerContent overflow="hidden" data-aos="fade-up">
       {/* this flex contain contact info & form  */}
       <Flex>
         {/* this box contain contact info like my number, email, etc */}

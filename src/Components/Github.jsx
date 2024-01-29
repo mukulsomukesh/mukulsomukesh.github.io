@@ -12,7 +12,7 @@ function Stats() {
 
 
   return (
-    <Box id="Stats" h="100vh" p="2%" data-aos="zoom-in">
+    <Box id="Stats" h="100vh" p="2%" maxW={"800px"} m="auto" data-aos="fade-up">
       {/* component name text  */}
       <Box
         m="auto"
@@ -28,7 +28,7 @@ function Stats() {
 
       {/* github stats */}
       <Box
-        w="fit-content"
+        w="100%"
         p="17px"
         m="auto"
         border="2px"
@@ -57,7 +57,7 @@ function Stats() {
 
       {/* github calander */}
       <Box
-        w="fit-content"
+        w="100%"
         p="21px"
         m="auto"
         border="2px"
