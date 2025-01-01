@@ -23,7 +23,7 @@ const milestones = [
         Loc: " Kolkata, West Bengal",
         org: "De's Techno Limited",
         title: 'Software Developer',
-        description: `Creating a portal that makes the procurement process easy in B2B transactions. We are developing this portal using React JS, Node JS, and PostgreSQL.`
+        description: `We are building a B2B procurement solution to make procurement easy and tech-friendly. As the first software developer here, I have gained immense experience and had the chance to learn and implement new things with complete freedom. We are now expanding our team and hiring more developers.`
     },
     {
         id: 2,
@@ -54,24 +54,24 @@ const milestones = [
 
 const WorkExperiance = () => {
 
-    
-  useEffect(() => {
-    AOS.init({});
-  }, [])
+
+    useEffect(() => {
+        AOS.init({});
+    }, [])
 
     return (
-        <Container maxWidth="1000px" p={{ base: 2, sm: 10 }} id="Work Experiance">
+        <Container maxWidth="1000px" mt="100px" p={{ base: 2, sm: 10 }} id="Work Experiance">
             <Box m="auto" mb="50px" w="fit-content" color="#dc143c" data-aos="fade-up">
                 <Text fontSize="3xl" as="b">
                     Work Experience
                 </Text>
             </Box>
             {milestones.map((milestone, index) => (
-    <Flex key={index} mb="10px" data-aos="fade-up">
-        <LineWithDot date={milestone.date} />
-        <Card {...milestone} />
-    </Flex>
-))}
+                <Flex key={index} mb="10px" data-aos="fade-up">
+                    <LineWithDot date={milestone.date} />
+                    <Card {...milestone} />
+                </Flex>
+            ))}
 
         </Container>
     );
@@ -101,37 +101,39 @@ const Card = ({ title, Loc, org, description, icon, date }) => {
         >
             {/* <Icon as={icon} w={12} h={12} color="#dc143c" /> */}
             <Box>
-                <HStack spacing={3} mb={1}>
+                <chakra.h1
+                    as={Link}
+                    _hover={{ color: '#dc143c' }}
+                    fontSize="2xl"
+                    lineHeight={1.2}
+                    fontWeight="bold"
+                    w="100%"
+                >
+                    {title}
+                </chakra.h1>
+                <HStack spacing={3} mt="1" >
+
                     <Text fontSize="sm" as={"b"} key={"cat"}>
-                        {org }
+                        {org} ,
                     </Text>
-                    <Text fontSize="sm" as={"b"} key={"cat"}  color="gray.500">
-                        {Loc}
+                    <Text fontSize="sm" as={"b"} key={"cat"} color="gray.500">
+                        {Loc},  {date}
                     </Text>
                 </HStack>
                 <HStack spacing={3} mb={1}>
-                    <Text fontSize="sm" as={"b"} key={"cat"}  color="gray.500">
-                      {date} 
+                    <Text fontSize="sm" as={"b"} key={"cat"} color="gray.500">
+
                     </Text>
                 </HStack>
                 <VStack spacing={2} mb={3} textAlign="left">
-                    <chakra.h1
-                        as={Link}
-                        _hover={{ color: '#dc143c' }}
-                        fontSize="2xl"
-                        lineHeight={1.2}
-                        fontWeight="bold"
-                        w="100%"
-                    >
-                        {title}
-                    </chakra.h1>
+
 
                     <Text fontSize="md" >
                         {description}
                     </Text>
 
                 </VStack>
-              
+
             </Box>
         </HStack>
     );

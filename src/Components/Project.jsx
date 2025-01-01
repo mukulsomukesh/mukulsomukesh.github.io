@@ -50,6 +50,13 @@ const projectData = [
     github: "https://github.com/mukulsomukesh/TODO",
     deploy: "https://lighthearted-fox-2d89be.netlify.app/signup",
     TechStack: "React JS | Node JS | Express JS | MongoDB | Redux | chakra UI"
+  },{
+    name: "Tic Tac Toe",
+    img: "https://camo.githubusercontent.com/7d39b4a94a79f7c0e4005268cc37b0b5e237f175bf9b446075d5b606dfc6f5dc/687474703a2f2f7265732e636c6f7564696e6172792e636f6d2f6466726879366d336d2f696d6167652f75706c6f61642f76313639323137373832312f6e73687269757932646c3138397931746f786d6b2e706e67",
+    desc: `This React app is built using React.js, Redux for efficient state management, and styled with Chakra UI for a modern interface. It allows users to play friendly matches with friends or challenge the computer in solo gameplay. With its intuitive design and smooth functionality, it provides an engaging experience for all users.`,
+    github: "https://github.com/mukulsomukesh/tic-tac-toe",
+    deploy: "https://tic-tac-toe-mj.netlify.app/",
+    TechStack: "React JS | Redux | chakra UI"
   },
 ]
 
@@ -73,7 +80,7 @@ function Project() {
       p="7%"
       pt="5%"
     >
-      <Box m="auto" mb="50px" w="fit-content" color="#dc143c">
+      <Box m="auto" mb="50px" w="fit-content" color="#dc143c"  >
         <Text fontSize="3xl" as="b">
           My Creative Projects Section
         </Text>
@@ -90,6 +97,9 @@ function Project() {
             p="12px"
             minH="fit-content"
             borderRadius="10px"
+            style={{ transition: "box-shadow 0.3s" }} // Add transition for smooth effect
+            _hover={{ boxShadow: "0 0 10px 2px crimson" }} // Define glow effect on hover
+
           >
 
             <Image

@@ -12,7 +12,8 @@ function Stats() {
 
 
   return (
-    <Box id="Stats" h="100vh" p="2%" maxW={"800px"} m="auto" data-aos="fade-up">
+    <Box id="Stats" h="fit-content"  maxW={"1000px"} m="auto" data-aos="fade-up" w="100%" pr="10%"
+      pl="10%">
       {/* component name text  */}
       <Box
         m="auto"

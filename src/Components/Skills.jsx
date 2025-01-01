@@ -18,6 +18,8 @@ import postman from "../Assets/postman.png";
 import react from "../Assets/react.png";
 import redux from "../Assets/redux.png";
 import tailwind from "../Assets/tailwind.png";
+import next from "../Assets/next.png";
+import pngegg from "../Assets/pngegg.png";
 
 export default function Skills() {
   useEffect(() => {
@@ -29,23 +31,20 @@ export default function Skills() {
     { name: "Css", imageSrc: css, imageAlt: "CSS" },
     { name: "JavaScript", imageSrc: javascript, imageAlt: "JavaScript" },
     { name: "React", imageSrc: react, imageAlt: "React" },
+    { name: "Next JS", imageSrc: next, imageAlt: "Next JS" },
     { name: "Node Js", imageSrc: node, imageAlt: "Node.js" },
     { name: "Express Js", imageSrc: express, imageAlt: "Express.js" },
+    { name: "Mongodb", imageSrc: mongodb, imageAlt: "MongoDB" },
+    { name: "PostgreSQL", imageSrc: pngegg, imageAlt: "PostgreSQL" },
     { name: "Redux", imageSrc: redux, imageAlt: "Redux" },
     { name: "Chakra UI", imageSrc: chakra, imageAlt: "Chakra UI" },
     { name: "Tailwind", imageSrc: tailwind, imageAlt: "Tailwind" },
     { name: "Bootstrap", imageSrc: bootstrap, imageAlt: "Bootstrap" },
-    { name: "Git", imageSrc: git, imageAlt: "Git" },
     { name: "Material UI", imageSrc: material, imageAlt: "Material UI" },
-    { name: "Mongodb", imageSrc: mongodb, imageAlt: "MongoDB" },
+    { name: "Git", imageSrc: git, imageAlt: "Git" },
     { name: "Npm", imageSrc: npm, imageAlt: "npm" },
     { name: "Postman", imageSrc: postman, imageAlt: "Postman" },
   ];
-
-
-  useEffect(() => {
-    AOS.init();
-  }, [])
 
   return (
     <Box id="Skill's" w="100%" pr="10%" pl="10%" p="7%" minH="fit-content" data-aos="fade-up">
@@ -58,17 +57,18 @@ export default function Skills() {
 
       {/* grid that contains all the skills */}
       <SimpleGrid minChildWidth="120px" spacing="15px">
-        {skillsData.map((skill) => (
+        {skillsData.map((skill, index) => (
           <Box
-            data-aos="fade-up"
-            key={skill.name}
+            key={index}
             bg="#0b111b"
             borderRadius="10px"
             h="150px"
             p="20px"
+            style={{ transition: "box-shadow 0.3s" }} // Add transition for smooth effect
+            _hover={{ boxShadow: "0 0 10px 2px crimson",textColor:"#dc143c", textShadow: "0px 0px 10px #dc143c, 0px 0px 50px #dc143c" }} // Define glow effect on hover
           >
             <Image src={skill.imageSrc} h="75px" m="auto" w="75px" alt={skill.imageAlt} />
-            <Text fontSize="lg" align="center" mt="15px">
+            <Text fontSize="lg" align="center" mt="15px"  >
               {skill.name}
             </Text>
           </Box>

@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import {
   Flex,
   Link,
@@ -11,8 +12,16 @@ import {
 } from "@chakra-ui/react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
+// import { fairyDustCursor } from "cursor-effects";
 
 function Home() {
+  // useEffect(() => {
+  //   fairyDustCursor({
+  //     colors: ['#dc143c', '#dc143c', '#dc143c'], // Set the color of the snowflakes cursor to red
+  //     // cursorSize: 40, // Adjust the size of the snowflakes cursor (optional)
+  //   });
+  // }, []);
+
   return (
     <Box
       pt={{ base: "47%", md: "40%", lg: "12%" }}
@@ -41,10 +50,9 @@ function Home() {
       {/* full stack heading */}
       <Heading as="h2" fontSize={{ base: "20px", md: "40px", lg: "45px" }}>
         Full Stack Developer
-
       </Heading>
 
-        {/* animated heading */}
+      {/* animated heading */}
       <Heading   size='lg' color="#dc143c" mt="5">
         <TypeAnimation
           cursor={true}
@@ -56,7 +64,6 @@ function Home() {
           speed={200}
           repeat={Infinity}
         />
-
       </Heading>
 
       {/* resume button */}
