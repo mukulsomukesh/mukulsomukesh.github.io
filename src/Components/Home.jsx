@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import {
   Flex,
   Link,
@@ -42,23 +42,28 @@ function Home() {
         <Heading
           as="h2"
           fontSize={{ base: "25px", md: "50px", lg: "65px" }}
-          color="#dc143c">
+          color="#dc143c"
+        >
           Mukul Jatav
         </Heading>
       </Flex>
 
       {/* full stack heading */}
       <Heading as="h2" fontSize={{ base: "20px", md: "40px", lg: "45px" }}>
-        Full Stack Developer
+        Software Developer
       </Heading>
 
       {/* animated heading */}
-      <Heading   size='lg' color="#dc143c" mt="5">
+      <Heading size="lg" color="#dc143c" mt="5">
         <TypeAnimation
           cursor={true}
           sequence={[
-            "UI/UX Enthusiast...", 2000,
-            "Passionate About Development...", 2000,
+            "Full Stack Developer...",
+            2000,
+            "UI/UX Enthusiast...",
+            2000,
+            "Passionate About Development...",
+            2000,
           ]}
           preRenderFirstString={true}
           speed={200}
@@ -92,7 +97,13 @@ function Home() {
         alignItems="flex-start"
       >
         {/* linkdin icon button */}
-        <Tooltip label="Let's Connect on Linkedin" hasArrow bg="#dc143c" color='white' fontSize='md'>
+        <Tooltip
+          label="Let's Connect on Linkedin"
+          hasArrow
+          bg="#dc143c"
+          color="white"
+          fontSize="md"
+        >
           <Link href="https://www.linkedin.com/in/mukul-jatav/" isExternal>
             <IconButton
               aria-label="facebook"
@@ -106,7 +117,13 @@ function Home() {
         </Tooltip>
 
         {/* github icon button */}
-        <Tooltip label="My Github Profile" hasArrow bg="#dc143c" color='white' fontSize='md'>
+        <Tooltip
+          label="My Github Profile"
+          hasArrow
+          bg="#dc143c"
+          color="white"
+          fontSize="md"
+        >
           <Link href="https://github.com/mukulsomukesh" isExternal>
             <IconButton
               aria-label="github"
